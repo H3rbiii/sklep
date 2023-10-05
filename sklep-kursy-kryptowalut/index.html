@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS od podstaw</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+
+  <nav class="navi">
+    <ul class="naviList">
+      <li class="naviItem">
+        <a href="index.html">Sklep</a>
+      </li>
+    </ul>
+    <div class="cart">
+      <a href="koszyk.html" class="button">
+        Koszyk
+        <span class="counter">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="conteiner">
+    <h2>Dostępne kursy: </h2>
+
+    <div class="promotion">
+      <p>Promocja na wszystkie kursy jeszcze przez:</p>
+      <p id="promotion-counter"></p>
+    </div>
+
+    <section class="coursesList">
+      <div class="box">
+        <img src="src/img/ETH.jpg" alt="kurs ETH" class="img">
+        <div class="boxBody">
+          <p class="boxTittle">
+            ETH od podstaw
+          </p>
+          <p>
+            <b>Cena</b>: 99zł
+          </p>
+          <button class="button cart-button" data-title="ETH" data-price="99" data-id="1">Dodaj do koszyka</button>
+        </div>
+      </div> 
+  
+      <div class="box">
+        <img src="src/img/BTC.jpg" alt="kurs BTC" class="img">
+        <div class="boxBody">
+          <p class="boxTittle">
+            BTC od podstaw
+          </p>
+          <p>
+            <b>Cena</b>: 102zł
+          </p>
+          <button class="button cart-button" data-title="BTC" data-price="102" data-id="2">Dodaj do koszyka</button>
+        </div>
+      </div>
+  
+    </section>
+  </div>
+
+  <!-- <script src="src/js/home.js"></script>
+  <script src="src/js/counter.js"></script> -->
+  <script src="src/js/app.js" type="module"></script>
+
+</body>
+</html>
